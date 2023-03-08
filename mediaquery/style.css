@@ -1,0 +1,26 @@
+@import url('/reset.css/reset.css');
+/*Screen width 0~767px*/
+@media screen and (max-width:767px) {
+  html {
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+/*Screen width 768~959px*/
+@media screen and (min-width:768px) and (max-width:959px) {
+  html {background-color: green;
+  color: #fff;
+  font-weight: bold;
+}
+}
+
+/*Screen width 960px~*/
+@media screen and (min-width:960px) {
+  html {
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+}
+}
