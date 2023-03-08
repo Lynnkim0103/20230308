@@ -1,0 +1,40 @@
+@import url('/reset.css/reset.css');
+
+body{
+  position: relative;
+}
+
+#box {
+  position: absolute;
+  width: 200px; height: 200px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 160px;
+  background: linear-gradient(#cb60b3 0%, #db36a4 100%);
+
+  /* animation: rint 2s linear none infinite alternate; 로도 쓸 수 있다. */
+
+  animation-name: rint;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+#box:hover {
+  animation-play-state: paused;
+}
+
+@keyframes rint {
+    from{
+      left: 0;
+      transform: rotate(0deg);
+  }
+    50% {
+      left: 500px;
+    }
+    to{
+      left: 500px;
+      transform: rotate(360deg);
+  }
+}
