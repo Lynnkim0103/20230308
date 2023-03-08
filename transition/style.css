@@ -1,0 +1,38 @@
+@import url('/reset.css/reset.css');
+
+#graph {
+  border: 3px solid black;
+  width: 710px;
+}
+
+.bar {
+  width: 30px; height: 60px;
+  background-color: orange;
+  margin: 5px;
+
+  transition-duration: 5s;
+}
+
+#graph:hover .bar {
+  width: 700px;
+}
+#graph .bar:nth-child(1) {
+  transition-delay: 0s;
+  transition-timing-function: linear;
+}
+#graph .bar:nth-child(2) {
+  transition-delay: 1s;
+  transition-timing-function: ease;
+}
+#graph .bar:nth-child(3) {
+  transition-delay: 2s;
+  transition-timing-function: ease-in;
+}
+#graph .bar:nth-child(4) {
+  transition-delay: 3s;  
+  transition-timing-function: ease-in-out;
+}
+#graph .bar:nth-child(5) {
+  transition-delay: 4s;  
+  transition-timing-function: ease-out;
+}
